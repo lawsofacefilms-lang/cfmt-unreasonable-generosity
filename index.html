@@ -54,11 +54,11 @@
     color: var(--ink); max-width: 34rem; margin: 1.4rem auto 0;
   }
   .facts {
-    display: grid; grid-template-columns: repeat(2, 1fr);
+    display: grid; grid-template-columns: repeat(3, 1fr);
     gap: 1.4rem 2rem; margin-top: 2.8rem; padding-top: 1.6rem;
     border-top: 1px solid var(--rule); text-align: center;
   }
-  @media (min-width: 40rem) { .facts { grid-template-columns: repeat(4, 1fr); } }
+  @media (min-width: 40rem) { .facts { grid-template-columns: repeat(3, 1fr); } }
   .facts div { display: flex; flex-direction: column; gap: .35rem; }
   .facts .v { font-size: .95rem; color: var(--ink); font-weight: 500; }
 
@@ -144,7 +144,6 @@
       <div><span class="eyebrow q">Date</span><span class="v">Mon, Nov 16, 2026</span></div>
       <div><span class="eyebrow q">Time</span><span class="v">5:30 to 7:30 PM</span></div>
       <div><span class="eyebrow q">Venue</span><span class="v">ELM Nashville</span></div>
-      <div><span class="eyebrow q">Photography</span><span class="v">CFMT photographer</span></div>
     </div>
   </header>
 
