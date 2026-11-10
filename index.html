@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="description" content="Unreasonable Generosity, November 16, 2026, for the Community Foundation of Middle Tennessee. Prepared by Laws of Ace Films.">
+<meta name="theme-color" content="#FFFFFF">
+<title>CFMT Unreasonable Generosity</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Montserrat:wght@400;500;600&display=swap">
+<style>
+  :root {
+    color-scheme: light;
+    --paper: #FFFFFF;
+    --ink:   #231F20;
+    --head:  #6D6E70;
+    --ink-2: #4A4748;
+    --ink-3: #A6A8AB;
+    --rule:  #E6E6E4;
+    --rule-2:#CAC9C8;
+    --blue:  #4A70B5;
+    --navy:  #304A7B;
+    --gold:  #DE9B2B;
+    --tint:  #FBF5EA;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--paper); }
+  body {
+    color: var(--ink);
+    font-family: "Montserrat", system-ui, -apple-system, sans-serif;
+    font-size: 17px; line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 50rem; margin: 0 auto; padding: 0 1.5rem; }
+
+  .eyebrow {
+    font-family: "Montserrat", sans-serif; font-weight: 600;
+    font-size: .72rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--ink);
+  }
+  .eyebrow.q { color: var(--ink-3); font-weight: 500; }
+
+  .tri { width: 0; height: 0; margin: 0 auto 1rem; border-left: 11px solid transparent; border-right: 11px solid transparent; border-bottom: 11px solid var(--gold); }
+
+  header.hero { padding: 5.5rem 0 3.4rem; text-align: center; border-bottom: 1px solid var(--rule); }
+  header.hero h1 {
+    font-family: "DM Serif Text", Georgia, serif; font-weight: 400; color: var(--head);
+    font-size: clamp(2.6rem, 7vw, 4.4rem); line-height: 1.05;
+    margin: 1rem 0 0; text-wrap: balance;
+  }
+  header.hero .thesis {
+    font-size: clamp(1.02rem, 2vw, 1.15rem); line-height: 1.6;
+    color: var(--ink); max-width: 34rem; margin: 1.4rem auto 0;
+  }
+  .facts {
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    gap: 1.4rem 2rem; margin-top: 2.8rem; padding-top: 1.6rem;
+    border-top: 1px solid var(--rule); text-align: center;
+  }
+  @media (min-width: 40rem) { .facts { grid-template-columns: repeat(4, 1fr); } }
+  .facts div { display: flex; flex-direction: column; gap: .35rem; }
+  .facts .v { font-size: .95rem; color: var(--ink); font-weight: 500; }
+
+  section { padding: 4rem 0; border-bottom: 1px solid var(--rule); }
+  section > .eyebrow { display: block; margin-bottom: .9rem; text-align: center; }
+  h2 {
+    font-family: "DM Serif Text", Georgia, serif; font-weight: 400; color: var(--head);
+    font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.15;
+    margin: 0 auto 1.4rem; text-wrap: balance; text-align: center; max-width: 36rem;
+  }
+  h3 { font-size: 1rem; font-weight: 600; margin: 0; }
+  p { margin: 0 auto 1rem; color: var(--ink-2); max-width: 40rem; }
+  p:last-child { margin-bottom: 0; }
+  p.lead { color: var(--ink); }
+  strong { color: var(--ink); font-weight: 600; }
+
+  .list { border-top: 1px solid var(--rule-2); margin-top: 1.6rem; }
+  .row { display: grid; gap: .3rem 1.5rem; padding: 1.1rem 0; border-bottom: 1px solid var(--rule); }
+  .row .k {
+    font-size: .74rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--ink-3); padding-top: .2rem;
+  }
+  .row .k.on { color: var(--blue); }
+  .row .t { color: var(--ink); font-size: .97rem; }
+  @media (min-width: 34rem) { .row { grid-template-columns: 9rem 1fr; } }
+
+  /* Packages */
+  .tiers { display: grid; gap: 1rem; margin-top: 1.8rem; }
+  @media (min-width: 48rem) { .tiers { grid-template-columns: repeat(3, 1fr); } }
+  .tier {
+    border: 1px solid var(--rule-2); padding: 1.5rem 1.3rem 1.4rem;
+    display: flex; flex-direction: column; background: var(--paper);
+  }
+  .tier.rec { border: 2px solid var(--gold); background: var(--tint); }
+  .tier .tag { min-height: 1.1rem; }
+  .tier.rec .tag { color: #93681E; }
+  .tier h3 { font-family: "DM Serif Text", Georgia, serif; font-weight: 400; font-size: 1.45rem; line-height: 1.2; margin: .5rem 0 0; color: var(--ink); }
+  .tier .price {
+    font-size: 2rem; font-weight: 600; letter-spacing: -.01em;
+    margin: .7rem 0 1rem; color: var(--navy); font-variant-numeric: tabular-nums;
+  }
+  .tier ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+  .tier li { font-size: .9rem; color: var(--ink-2); padding: .6rem 0; border-bottom: 1px solid var(--rule); }
+  .tier li b { color: var(--ink); font-weight: 600; }
+  .tier li.plus { color: var(--ink); }
+
+  .terms { margin-top: 1.6rem; font-size: .86rem; color: var(--head); text-align: center; }
+
+  .acts { display: flex; justify-content: center; margin-top: 2rem; }
+  .btn {
+    position: relative; display: inline-flex; align-items: center; gap: .7rem;
+    text-decoration: none; color: var(--ink);
+    font-size: .82rem; font-weight: 500; letter-spacing: .2em; text-transform: uppercase;
+    padding: 1.1rem 0 1.1rem 1.1rem;
+  }
+  .btn::before {
+    content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+    width: 3.4rem; height: 3.4rem; border-radius: 50%; background: var(--gold); z-index: -1;
+    transition: width .25s ease, border-radius .25s ease;
+  }
+  .btn:hover::before, .btn:focus-visible::before { width: 100%; border-radius: 1.7rem; }
+  .btn .arr { font-size: 1.1rem; letter-spacing: 0; padding-right: 1rem; }
+  .acts { position: relative; z-index: 0; }
+  a:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+
+  footer {
+    padding: 2.8rem 0 4rem; text-align: center;
+    font-size: .78rem; color: var(--head); line-height: 1.9;
+  }
+  footer .name { color: var(--ink); letter-spacing: .2em; font-weight: 600; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="tri"></div>
+    <span class="eyebrow">Laws of Ace Films &nbsp;&middot;&nbsp; Community Foundation of Middle Tennessee</span>
+    <h1>Unreasonable Generosity</h1>
+    <p class="thesis">A conversation with Will Guidara and Benjamin Goldberg, captured so that anyone who watches later feels like they had a seat in the room.</p>
+    <div class="facts">
+      <div><span class="eyebrow q">Date</span><span class="v">Mon, Nov 16, 2026</span></div>
+      <div><span class="eyebrow q">Time</span><span class="v">5:30 to 7:30 PM</span></div>
+      <div><span class="eyebrow q">Venue</span><span class="v">ELM Nashville</span></div>
+      <div><span class="eyebrow q">Photography</span><span class="v">CFMT photographer</span></div>
+    </div>
+  </header>
+
+  <section>
+    <span class="eyebrow">The night</span>
+    <h2>You give more than a check when you give this way.</h2>
+    <p class="lead">The room on November 16 is full of donors and people who could become donors. The conversation on stage is about generosity that goes past the transaction: getting to know people, thinking outside the box, and making them feel seen.</p>
+    <p>That idea is the reason the recording matters. The people in the room will hear it once. The film lets CFMT put that same conversation on the website and in front of every donor who was not there.</p>
+  </section>
+
+  <section>
+    <span class="eyebrow">Approach</span>
+    <h2>Documentation that is also worth watching.</h2>
+    <div class="list">
+      <div class="row"><div class="k on">The program</div><div class="t">The full conversation, top to bottom, edited as a multi-camera program so it plays like a talk you would choose to watch, not a single locked-off wide shot.</div></div>
+      <div class="row"><div class="k on">The sound</div><div class="t">Clean audio on both speakers is the priority. Audio is secured with ELM before doors open so nothing on stage is lost to a full room.</div></div>
+      <div class="row"><div class="k on">The room</div><div class="t">The crew stays quiet and out of the way. Your guests are there to be hosted, and coverage is planned around that.</div></div>
+      <div class="row"><div class="k on">The crew</div><div class="t">A full team on headset comms, with the same crew lead CFMT has worked with on Gamechangers, the August event, and the donor profiles.</div></div>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">Packages</span>
+    <h2>Choose the package that fits how CFMT will use it.</h2>
+    <div class="tiers">
+      <div class="tier">
+        <span class="eyebrow q tag">&nbsp;</span>
+        <h3>Full Program</h3>
+        <div class="price">$4,500</div>
+        <ul>
+          <li><b>Multi-camera crew</b> on site for the evening</li>
+          <li><b>Full program edit</b>, the complete conversation top to bottom</li>
+          <li>Color, sound mix, and titles</li>
+          <li>One revision round</li>
+        </ul>
+      </div>
+      <div class="tier rec">
+        <span class="eyebrow tag">Recommended</span>
+        <h3>Program + Recap</h3>
+        <div class="price">$5,500</div>
+        <ul>
+          <li>Everything in Full Program</li>
+          <li class="plus"><b>Event recap</b> of the night</li>
+          <li>One revision round on each piece</li>
+        </ul>
+      </div>
+      <div class="tier">
+        <span class="eyebrow q tag">&nbsp;</span>
+        <h3>Program, Recap + Shorts</h3>
+        <div class="price">$6,250</div>
+        <ul>
+          <li>Everything in Program + Recap</li>
+          <li class="plus"><b>Three vertical shorts</b>, up to 90 seconds each, cut from the conversation to promote the full program</li>
+        </ul>
+      </div>
+    </div>
+    <p class="terms">Fifty percent due on signing to secure crew and equipment, balance on final delivery. Payment by check, W-9 on file. This proposal is valid for 30 days.</p>
+  </section>
+
+  <section>
+    <span class="eyebrow">Before the night</span>
+    <h2>A few things to confirm.</h2>
+    <div class="list">
+      <div class="row"><div class="k">Stage light</div><div class="t">Our walkthrough was in daylight, and the program runs after dark. Will there be stage lighting on the speakers, or should we bring our own?</div></div>
+      <div class="row"><div class="k">Audio</div><div class="t">A clean feed from ELM's board, or our own mics on each speaker. We will lock this with ELM ahead of the event.</div></div>
+      <div class="row"><div class="k">Delivery</div><div class="t">When do you need the program and the other pieces? Let us know your date and we will build the edit schedule around it.</div></div>
+      <div class="row"><div class="k">Guests</div><div class="t">If any guests would prefer not to appear on camera, let us know and we will plan around them.</div></div>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">Next step</span>
+    <h2>Pick a package and sign in one place.</h2>
+    <p>The agreement opens with all three packages. Select the one you want, and the contract and invoice update to match.</p>
+    <div class="acts">
+      <a class="btn" href="#" id="agreement" target="_blank" rel="noopener">Choose a package and sign <span class="arr">&rarr;</span></a>
+    </div>
+  </section>
+
+  <footer>
+    <span class="name">LAWS OF ACE FILMS LLC</span><br>
+    Bryan Williams &nbsp;&middot;&nbsp; (615) 497-2882 &nbsp;&middot;&nbsp; lawsofacefilms@gmail.com<br>
+    616 Stardust Lane, Antioch, TN 37013 &nbsp;&middot;&nbsp; www.lawsofacefilms.com
+  </footer>
+
+</div>
+</body>
+</html>
